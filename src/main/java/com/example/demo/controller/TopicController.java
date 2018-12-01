@@ -35,6 +35,13 @@ public class TopicController {
         model.addAttribute("str",str);
         return "/act/list";
     }
+    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public String index(Model model){  //这个地方用model来存储数据，里面存储键值对，值可以为list
+
+        String str = "Hello！";
+        model.addAttribute("str",str);
+        return "/act/index";
+    }
 
 
 
