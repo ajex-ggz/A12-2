@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:text-align="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>简单粗暴选题系统！</title>
+</head>
+<body>
+<h1>简单粗暴选题系统！</h1>
+<h2>题目列表</h2>
+<h2>test</h2>
+<span data-th-text="${str}"></span>
+<p th:text="${str}"></p>
+<table width="400" border="1" cellspacing="0" cellpadding="0">
+    <thead>
+    <tr>
+        <th width="105">序号</th>
+        <th width="105">题目</th>
+        <th width="105">老师</th>
+        <th width="105">已选学号（0为未有人选）</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="topic:${topics}">
+        <td width="105"   th:text="${topic.id}">序号</td>
+        <td width="105"  th:text="${topic.name}">题目</td>
+        <td width="105"  th:text="${topic.teacher}">老师</td>
+        <td width="105"  th:text="${topic.number}">已选学号</td>
+    </tr>
+    </tbody>
+</table>
+<form action="/check" method="get">
+    <p>选择你要选的题目的序号: <input type="text" name="id" /></p>
+    <p>你的学号（比如二班1号：“2-1”）: <input type="text" name="number" /></p>
+    <input type="submit" value="确认" />
+</form>
+
+</body>
+</html>
