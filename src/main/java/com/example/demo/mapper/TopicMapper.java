@@ -5,10 +5,10 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-
 @Mapper
 @Component("topicMapper")
 public interface TopicMapper {
-    List<Topic> findAll();
-    Topic findById(String id);
+    int insert(Topic record);
+
+    List<Topic> selectAll();
 }

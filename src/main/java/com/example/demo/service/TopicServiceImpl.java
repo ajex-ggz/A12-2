@@ -14,7 +14,7 @@ public class TopicServiceImpl implements TopicService{
     private TopicMapper topicMapper;
 
     @Override
-    public List<Topic> findAll(){
-        return topicMapper.findAll();
+    public List<Topic> selectAll(){
+        return topicMapper.selectAll();
     }
 }

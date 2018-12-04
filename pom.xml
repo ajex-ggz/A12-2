@@ -86,13 +86,6 @@
                     <verbose>true</verbose>
                     <overwrite>true</overwrite>
                 </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.13</version>
-                    </dependency>
-                </dependencies>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -107,7 +100,7 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
-                    <include>*.properties</include>
+                    <include>**/*.*</include>
                 </includes>
             </resource>
             <resource>

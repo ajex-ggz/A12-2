@@ -23,4 +23,5 @@
     select phone, `password`, age, username, sex, email, regtime
     from userA12
   </select>
+
 </mapper>
