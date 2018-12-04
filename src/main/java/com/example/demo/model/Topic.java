@@ -8,5 +8,5 @@ public class Topic {
     private String  name;
     private String  teacher;
     private String number;
-    //²âÊÔ
+    //æµ‹è¯•UTF-8
 }
