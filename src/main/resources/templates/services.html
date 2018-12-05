@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Home</title>
+    <meta charset="UTF-8"/>
+    <title>SERVICES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="" />
@@ -24,7 +25,7 @@
     <!-- fonts -->
     <!-- js files -->
     <script type="text/javascript"   th:src="@{/js/modernizr.js}"></script>
-<!-- /js files -->
+    <!-- /js files -->
 </head>
 <body>
 <!-- banner section -->
@@ -49,68 +50,7 @@
             </nav>
         </div>
     </div>
-    <div class="pogoSlider" id="js-main-slider">
-        <div class="pogoSlider-slide" data-transition="verticalSlide" data-duration="2000"  style="background-image:url(images/banner1.jpg);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <h3>Affluence Perfection At It's Finest. The Real Corporate World</h3>
-                    <p>Lorem ipsum dolor.</p>
-                    <ul class="banner-agileits">
-                        <li><a href="#readmore" class="link-w3l1" data-toggle="modal">Read More</a></li>
-                        <li><a href="#contact" class="link-w3l2 page-scroll">Contact Us</a></li>
-                    </ul>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="2000"  style="background-image:url(images/banner2.jpg);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <h3>Affluence Always And Forever. The Real Corporate World</h3>
-                    <p>Fusce ac lacus cursus.</p>
-                    <ul class="banner-agileits">
-                        <li><a href="#readmore" class="link-w3l1" data-toggle="modal">Read More</a></li>
-                        <li><a href="#contact" class="link-w3l2 page-scroll">Contact Us</a></li>
-                    </ul>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="2000"  style="background-image:url(images/banner3.jpg);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <h3>Affluence For A Professional Image. The Real Corporate World</h3>
-                    <p>Aenean hendrerit lacus.</p>
-                    <ul class="banner-agileits">
-                        <li><a href="#readmore" class="link-w3l1" data-toggle="modal">Read More</a></li>
-                        <li><a href="#contact" class="link-w3l2 page-scroll">Contact Us</a></li>
-                    </ul>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="pogoSlider-slide " data-transition="verticalSlide" data-duration="2000"  style="background-image:url(images/banner4.jpg);">
-            <div class="pogoSlider-slide-element">
-                <div class="container">
-                    <h3>Affluence, The Best You Can Get. The Real Corporate World</h3>
-                    <p>Cras a urna lobortis.</p>
-                    <ul class="banner-agileits">
-                        <li><a href="#readmore" class="link-w3l1" data-toggle="modal">Read More</a></li>
-                        <li><a href="#contact" class="link-w3l2 page-scroll">Contact Us</a></li>
-                    </ul>
-                    <a href="#about" class="btn btn-circle page-scroll">
-                        <i class="fa fa-angle-double-down animated"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div><!-- .pogoSlider -->
+
     <div class="modal fade" id="readmore" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -120,7 +60,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <img class="img-responsive team-agile" src="images/blog-img1-1.jpg" alt="">
+                        <img class="img-responsive team-agile" th:src="@{images/blog-img1-1.jpg}" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elementum interdum aliquet. Nam eleifend ac augue in aliquet. Maecenas ac molestie mi. Nam tincidunt pretium dolor, eu placerat elit. Duis nec luctus dolor. Ut a diam metus. Aenean fringilla purus enim, non pharetra eros blandit in. Suspendisse tellus quam, vestibulum vel urna vitae, sagittis consectetur dui. </p>
@@ -135,16 +75,109 @@
     </div><!-- /.modal -->
 </section>
 <!-- /banner section -->
-
-
-
-
-
-<!-- map -->
-<!---<div class="map" data-aos="zoom-in">
-	<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380510.6741687111!2d-88.01234121699822!3d41.83390417061058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1455598377120" style="border:0" allowfullscreen></iframe>
-</div>--->
-<!-- /map -->
+<!-- services section -->
+<section class="service-w3l jarallax" id="service">
+    <div class="container">
+        <h3 class="text-center">Our Services</h3>
+        <span class="fa fa-star-o" aria-hidden="true"></span>
+        <div class="col-lg-4 col-md-4 col-sm-12 serv-agileinfo1">
+            <div class="col-lg-12 col-md-12 col-sm-6 serv-wthree1" data-aos="zoom-in">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-1"></div>
+                                <div class="ch-info-back">
+                                    <h5>Affluence</h5>
+                                    <p>Best In Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="text-center">Lorem ipsum dolor</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat risus eu pretium commodo.</p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-6 serv-wthree2" data-aos="zoom-in">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-2"></div>
+                                <div class="ch-info-back">
+                                    <h5>Affluence</h5>
+                                    <p>Best In Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="text-center">adipiscing elit</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat risus eu pretium commodo.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 serv-agileinfo2">
+            <div class="col-lg-12 col-md-12 col-sm-6 serv-wthree4" data-aos="zoom-in">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-3"></div>
+                                <div class="ch-info-back">
+                                    <h5>Affluence</h5>
+                                    <p>Best In Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="text-center">Nulla volutpat</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat risus eu pretium commodo.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 serv-agileinfo3">
+            <div class="col-lg-12 col-md-12 col-sm-6 serv-wthree6" data-aos="zoom-in">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-4"></div>
+                                <div class="ch-info-back">
+                                    <h5>Affluence</h5>
+                                    <p>Best In Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="text-center">scelerisque enim</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat risus eu pretium commodo.</p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-6 serv-wthree5" data-aos="zoom-in">
+                <ul class="ch-grid">
+                    <li>
+                        <div class="ch-item">
+                            <div class="ch-info">
+                                <div class="ch-info-front ch-img-5"></div>
+                                <div class="ch-info-back">
+                                    <h5>Affluence</h5>
+                                    <p>Best In Services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h4 class="text-center">Proin luctus mi</h4>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat risus eu pretium commodo.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</section><div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+<!-- /services section -->
 
 <!-- footer section -->
 <section class="footer-w3">
@@ -182,15 +215,15 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" data-aos="zoom-in">
             <h3>Recent Pics</h3>
             <div class="footer-pic">
-                <a href="images/footer-img1.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img1.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img2.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img2.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img3.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img3.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img4.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img4.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img5.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img5.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img6.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img6.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img7.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img7.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img8.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img8.jpg" alt="" class="img-responsive"/></a>
-                <a href="images/footer-img9.jpg" class="lightninBox" data-lb-group="1"><img src="images/footer-img9.jpg" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img1.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img1.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img2.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img2.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img3.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img3.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img4.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img4.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img5.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img5.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img6.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img6.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img7.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img7.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img8.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img8.jpg}" alt="" class="img-responsive"/></a>
+                <a th:href="@{images/footer-img9.jpg}" class="lightninBox" data-lb-group="1"><img th:src="@{images/footer-img9.jpg}" alt="" class="img-responsive"/></a>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -217,14 +250,14 @@
 <a href="#0" class="cd-top">Top</a>
 <!-- /back to top -->
 <!-- js files -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src='js/aos.js'></script>
-<script src="js/lazyload.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/grayscale.js"></script>
-<script src="js/jarallax.js"></script>
+<script th:src="@{js/jquery.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/smoothscroll.js}"></script>
+<script th:src="@{js/aos.js}"></script>
+<script th:src="@{js/lazyload.js}"></script>
+<script th:src="@{js/jquery.easing.min.js}"></script>
+<script th:src="@{js/grayscale.js}"></script>
+<script th:src="@{js/jarallax.js}"></script>
 <script type="text/javascript">
     $('.jarallax').jarallax({
         speed: 0.5,
@@ -233,25 +266,25 @@
     })
 </script>
 <!-- js for back to top -->
-<script src="js/main2.js"></script>
+<script th:src="@{js/main2.js}"></script>
 <!-- /js for back to top -->
 <!-- js for footer -->
-<script src="js/jQuery.lightninBox.js"></script>
+<script th:src="@{js/jQuery.lightninBox.js}"></script>
 <script type="text/javascript">
     $(".lightninBox").lightninBox();
 </script>
 <!-- /js for footer -->
 <!-- js for portfolio -->
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie2.js"></script>
-<script src="js/cbpGridGallery.js"></script>
+<script th:src="@{js/imagesloaded.pkgd.min.js}"></script>
+<script th:src="@{js/masonry.pkgd.min.js}"></script>
+<script th:src="@{js/classie2.js}"></script>
+<script th:src="@{js/cbpGridGallery.js}"></script>
 <script>
     new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 </script>
 <!-- /js for portfolio -->
 <!-- js for about section -->
-<script type="text/javascript" src="js/jquery.slide.js"></script>
+<script type="text/javascript" th:src="@{js/jquery.slide.js}"></script>
 <script type="text/javascript">
     $('#slideshow-banner').slide({
         cdTime : 5000,
@@ -261,12 +294,12 @@
 </script>
 <!-- /js for about section -->
 <!-- js for banner -->
-<script src="js/jquery.pogo-slider.min.js"></script>
-<script src="js/main.js"></script>
+<script th:src="@{js/jquery.pogo-slider.min.js}"></script>
+<script th:src="@{js/main.js}"></script>
 <!-- /js for banner -->
 <!-- js for navigation -->
-<script src="js/classie.js"></script>
-<script src="js/demo1.js"></script>
+<script th:src="@{js/classie.js}"></script>
+<script th:src="@{js/demo1.js}"></script>
 <!-- /js for navigation -->
 
 <!-- /js files -->
