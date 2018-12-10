@@ -100,12 +100,12 @@
             </ul>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12" data-aos="zoom-in">
-            <form action="#" method="post">
+            <form th:action="@{/loginAction}" method="post">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>User Name:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <label>Phone:</label>
+                            <input type="text" class="form-control" name="phone" required data-validation-required-message="Please enter your phone.">
                             <p class="help-block"></p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Psaaword:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            <input type="password" class="form-control" name="password" required data-validation-required-message="Please enter your password.">
                         </div>
                     </div>
                 </div>

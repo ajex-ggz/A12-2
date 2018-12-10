@@ -14,14 +14,19 @@
     <selectKey keyProperty="phone" order="AFTER" resultType="java.lang.String">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into userA12 (`password`, age, username, 
+    insert into userA12 (phone, `password`, age, username,
       sex, email, regtime)
-    values (#{password,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, 
+    values (#{phone,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR},
       #{sex,jdbcType=INTEGER}, #{email,jdbcType=VARCHAR}, #{regtime,jdbcType=DATE})
   </insert>
   <select id="selectAll" resultMap="BaseResultMap">
     select phone, `password`, age, username, sex, email, regtime
     from userA12
+  </select>
+  <select id="selectByPhoneAndPassword" resultType="com.example.demo.model.Usera12" parameterType="com.example.demo.model.Usera12">
+    select phone, `password`, age, username, sex, email, regtime
+    from userA12
+    where phone=#{phone} and password=#{password}
   </select>
 
 </mapper>

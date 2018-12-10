@@ -10,10 +10,12 @@ public class TurnController {
     @RequestMapping(value = "/index",method = RequestMethod.GET)
     public String index(Model model){  //这个地方用model来存储数据，里面存储键值对，值可以为list
         return "index";
-    }@RequestMapping(value = "/login",method = RequestMethod.GET)
+    }
+    @RequestMapping(value = "/login",method = RequestMethod.GET)
     public String login(Model model){  //这个地方用model来存储数据，里面存储键值对，值可以为list
         return "login";
-    }@RequestMapping(value = "/signup",method = RequestMethod.GET)
+    }
+    @RequestMapping(value = "/signup",method = RequestMethod.GET)
     public String signup(Model model){  //这个地方用model来存储数据，里面存储键值对，值可以为list
         return "signup";
     }

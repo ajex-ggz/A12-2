@@ -98,13 +98,21 @@
             </ul>
         </div>
         <div class="col-lg-7 col-md-7 col-sm-12" data-aos="zoom-in">
-            <form action="#" method="post">
+            <form th:action="@{/signupAction}" method="post">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>User Name:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                            <label>Phone:</label>
+                            <input type="text" class="form-control" name="phone" required data-validation-required-message="Please enter your Phone.">
                             <p class="help-block"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Psaaword:</label>
+                            <input type="password" class="form-control" name="password" required data-validation-required-message="Please enter your password.">
                         </div>
                     </div>
                 </div>
@@ -112,8 +120,35 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Psaaword:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+                            <label>User Name:</label>
+                            <input type="text" class="form-control" name="username" required data-validation-required-message="Please enter your real name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" name="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Age:</label>
+                            <input type="text" class="form-control" name="age" required data-validation-required-message="Please enter your age.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Sex:</label>
+                            <input type="text" class="form-control" name="sex" required data-validation-required-message="Please enter your sex.">
                         </div>
                     </div>
                 </div>
